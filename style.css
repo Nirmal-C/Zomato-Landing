@@ -1,14 +1,13 @@
-/*override the default browser spacing*/ 
-*{
+*{/*override the default browser spacing*/ 
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 
-} 
+}
 
 body{
     font-family: "Merriweather", sans-serif;
-    background-color: #ebf2ff ;
+    background-color: #ebf2ff;
     overflow-x: hidden;
     transition: 0.5s;
 }
@@ -21,13 +20,13 @@ ul{
 }
 
 button{
-    border:none;
+    border: none;
     cursor: pointer;
 
 }
 
 section{
-    margin: 4rem 0;   
+    margin: 4rem 0;
 }
 
 .container{
@@ -51,20 +50,20 @@ section{
         margin-top: 2rem;
     }
     .video_footage_text{
-        margin-left: 2rem; 
+        margin-left: 2rem;
     }
     .video_footage{
         margin-right: 2rem;
     }
     .food_list_container{
-        position:relative;
+        position: relative;
         margin: 5rem 0;
     }
     .food_menu_card_list{
-        display:flex;
+        display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        padding: 2rem;
+        padding-top: 2rem;
     }
     .food_menu_card{
         flex-basis: 30%;
@@ -78,12 +77,12 @@ section{
     .food_list_container_diagonal{
         left: 0px;
         position: absolute;
-        top: opx;
+        top: 0px;
         height: 100%;
         width: 100%;
-        transform:skewY(-5deg);
+        transform: skewY(-5deg);
         background-image: linear-gradient(
-            to right, 
+            to right,
             #ff512f 0%, #dd2476 51%, #ff512f 100% );
         z-index: -3;
     }
@@ -95,7 +94,7 @@ section{
     .restaurant_list_row_1{
         justify-content: center;
     }
-    .restaurant_list_row2{
+    .restaurant_list_row_2{
         margin-top: 3px;
         align-items: flex-start;
         justify-content: center;
@@ -126,12 +125,12 @@ section{
         width: 60%;
     }
     .food_menu_card_list{
-        margin-top: rem;
+        margin-top: 2rem;
     }
 }
 
 .navbar{
-    position:sticky;
+    position: sticky;
     top: 0;
     display: flex;
     justify-content: space-between;
@@ -146,7 +145,7 @@ section{
 }
 
 .brand_logo{
-    width: 100%;    
+    width: 100%;
 }
 
 .navbar_nav_items{
@@ -154,7 +153,7 @@ section{
 }
 
 .button_primary{
-    background-image: linear-gradient(    
+    background-image: linear-gradient(
         to right,
         #ff512f 0%, #dd2476 51%, #ff512f 100%
        );
@@ -162,15 +161,15 @@ section{
 
 .button_primary{
     margin: 10px;
-    padding:0.5rem 1rem;
+    padding: 0.5rem 1rem;
     text-align: center;
-    text-transform: capitalize; 
+    text-transform: capitalize;
     transition: 0.5s;
     font-weight: 600;
     background-size: 200% auto;
     color: white;
     border-radius: 4px;
-    box-shadow: 0 0 20px #eee ;
+    box-shadow: 0 0 20px #eee;
     display: block;
 }
 
@@ -235,7 +234,7 @@ section{
     top: 0;
     left: 0;
     position: absolute;
-    transition: translate(1rem 1rem);
+    transform: translate(1rem, 1rem);
     height: 100%;
     width: 100%;
     z-index: -1;
@@ -250,8 +249,8 @@ section{
 }
 
 .food_list_container{
-    position:relative;
-    margin: 5rem;
+    position: relative;
+    margin: 5rem 0;
 }
 
 .food_menu_card_list{
@@ -266,7 +265,7 @@ section{
 .food_menu_card_details{
     padding: 1rem;
     text-align: left;
-    color: #1d3557
+    color: #1d3557;
 }
 
 .food_menu_card_title{
