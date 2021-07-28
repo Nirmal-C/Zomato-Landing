@@ -31,7 +31,11 @@ section{
 }
 
 .container{
-
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 @media (min-width: 768px){
@@ -78,13 +82,25 @@ section{
         height: 100%;
         width: 100%;
         transform:skewY(-5deg);
-        background-image: linear-gradient(            to right,        #ff512f 0%, #dd2476 51%, #ff512f 100%        );
+        background-image: linear-gradient(
+            to right, 
+            #ff512f 0%, #dd2476 51%, #ff512f 100% );
         z-index: -3;
-        -webkit-transform:skewY(-5deg);
-        -moz-transform:skewY(-5deg);
-        -ms-transform:skewY(-5deg);
-        -o-transform:skewY(-5deg);
-}
+    }
+    .restaurant_list_container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .restaurant_list_row_1{
+        justify-content: center;
+    }
+    .restaurant_list_row2{
+        margin-top: 3px;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
 }
 
 @media (min-width: 1200px){
@@ -92,7 +108,7 @@ section{
         max-width : 1140px;
     }
     .navbar{
-        padding: 0 3rem
+        padding: 0 3rem;
     }
     .button_primary{ 
         padding: 1rem 2rem;
@@ -111,7 +127,6 @@ section{
     }
     .food_menu_card_list{
         margin-top: rem;
-
     }
 }
 
@@ -260,3 +275,46 @@ section{
     color: #1d3557;
     font-weight: 900;
 }
+
+.restaurant_list_container{
+    margin-top: 3rem;
+}
+
+.restaurant_list_text{
+    margin: 1rem 0;
+}
+
+.restaurant_list_row_1{
+    display: flex;
+    align-items: baseline;
+}
+
+.restaurant_list_row_2{
+    margin-top: 10px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+}
+
+.restaurant1,
+.restaurant3{
+    border-radius: 4px;
+    margin: 0 5px;
+    width: 150px;
+    height: 80px;
+    box-shadow:  0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.restaurant2,
+.restaurant4{
+    border-radius: 4px;
+    margin: 0 5px;
+    width: 200px;
+    height: 100px;
+    box-shadow:  0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+}
+
+
+
+ 
