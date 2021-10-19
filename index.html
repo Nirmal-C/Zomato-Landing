@@ -4,99 +4,144 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap">
-    <title>Zomato Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Zomato-World Largest Food Online Website</title>
 </head>
 <body>
+    <!-- navbar -->
     <header>
         <nav class="navbar">
-            <div class="navbar_brand">
-                <img src="./assets/logo.png" alt="logo" class="brand_logo"/>
+            <div class="navbar_bar">
+            <img src="assets/logo.png" alt="logo" class="navbar_logo">
             </div>
             <div class="navbar_nav_items">
-                <div class="nav_item"> 
-                    <button class="button_primary">Order Food</button>
-                </div>
+            <button class="nav_item button_primary">Order Food</button>
             </div>
         </nav>
     </header>
+    <!-- body -->
     <main class="container">
         <section class="hero_container">
-            <div class="hero_image_container">
-                <img src="./assets/hero.jpg" alt="hero image" class="hero_image" />
-                <img src="./assets/svg/heroShape.svg" alt="hero image shape" class="hero_image_shape"/>
-                <img src="./assets/svg/herobgpattren.svg" alt="hero image pattern" class="hero_image_pattern" /></div>
-                <div class="hero_description">
-                    <h1 class="hero_text">Order food from favourite restaurants near you</h1>
-                    <button class="button_primary">Order Now</button>
+            <div class="hero_img_container">
+                <img src="assets/hero.jpg" alt="hero img" class="hero_img">
+                <img src="assets/svg/heroShape.svg" alt="hero bg shape"  class="hero__image__background">
+                <img src="assets/svg/herobgpattren.svg" alt="hero bg shape pattern" class="hero__image__background__shades">
+            </div>
+             <div class="hero_text">
+                 <p>Order Food from Favorite Restauruants Near you</p>
+                 <button class="button_primary">Order now</button>
+             </div> 
+            </div> 
+         
+
+        </section>
+        <br>
+        <br>
+        <br>
+        <br>
+        <!-- cards -->
+        <section class="explore_menu_container">
+            <h1 class="explore_menu_text">Explore Our Menu</h1>
+            <div class="explore_bg_gradient"></div>
+            <div class="explore_menu_lists">
+                <!-- burger -->
+                <div class="food_card">
+                <div class="food_card_image" id="burger_card">
+                <img src="assets/burger.jpg" alt="burger" class="food_image">
+                </div>
+                <div class="food_card_description">
+                <h3 class="food_title">Burger</h3>
+                <p>Burger King,Mcdonalds,Burger place <span style="color:red">+3</span></p>
+                </div>
+                </div>
+               <!-- pizza -->
+               <div class="food_card">
+               <div class="food_card_image" id="pizza_card">
+                <img src="assets/pizza.jpg" alt="burger" class="food_image">
+                </div>
+                <div class="food_card_description">
+                <h3 class="food_title">Pizza</h3>
+                <p>Pizza Hut, Domino's Pizza <span style="color:red">+3</span></p>
+                </div>
+               </div>
+               <!-- icecream -->
+               <div class="food_card">
+               <div class="food_card_image" id="icecream_card">
+                <img src="assets/iceCream.jpg" alt="burger" class="food_image">
+                </div>
+                <div class="food_card_description">
+                <h3 class="food_title">Ice Cream</h3>
+                <p>Baskin Robins, Ibaco <span style="color:red">+3</span></p>
+                </div>
+                </div>
+                </div>
+                <div class="to_view_more">
+                    <p>View More</p>
                 </div>
         </section>
-        <section class="video_footage_container">
-            <div class="video_footage">
-                <iframe src="https://player.vimeo.com/video/3707644" 
-                        frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen class="chef_video"></iframe>
-            </div>
-            <div class="video_footage_text">
-                <p>Your food will be prepared safely with an experienced chef, without compromising on the quality and hygiene.</p>
-            </div>
-        </section>
-        <section class="food_list_container">
-            <h1 class="text-x1">Explore our menu</h1>
-            <div class="food_list_container_diagonal"></div>
-
-            <div class="food_menu_card_list">
-                <!-- Card 1-->
-                <div class="food_menu_card">
-                    <img src="./assets/burger.jpg" alt="burger" class="food_menu_card_image"/>
-                    <div class="food_menu_card_details">
-                        <h4 class="food_menu_card_title"><strong>Burgers</strong></h4>
-                        <p>Burger King, Mcdonalds, Burger Place
-                            <span style="color:red;">+3</span></p>
+        <section>
+            <div class="restaruant_list_container">
+                <div class="restaruant_list_text">
+                    <h4 class="restaruant_text">Order From 100s of restaruant</h4>
+                </div>
+                <div class="restaruant_list_images_container">
+                    <div class="restaruant_list_row1">
+                        <div class="restaruant_images_box1">
+                            <img src="assets/restaurant1.jpg" alt="image1" class="image1">
+                        </div>
+                        <div class="restaruant_images_box2">
+                            <img src="assets/restaurant2.jpg" alt="image2" class="image2">
+                        </div>
+                    </div>
+                    <div class="restaruant_list_row2">
+                        <div class="restaruant_images_box3">
+                            <img src="assets/restaurant3.jpg" alt="image3" class="image3">
+                        </div>
+                        <div class="restaruant_images_box4">
+                            <img src="assets/restaurant4.jpg" alt="image4" class="image4">
+                        </div>
                     </div>
                 </div>
-
-                <!-- Card 2-->
-                <div class="food_menu_card food_menu_card_move_up">
-                    <img src="./assets/pizza.jpg" alt="pizza" class="food_menu_card_image"/>
-                    <div class="food_menu_card_details">
-                        <h4 class="food_menu_card_title"><strong>Pizza</strong></h4>
-                        <p>Pizza Hut, Domino's Pizza
-                            <span style="color:red;">+3</span></p>
-                    </div>
-                </div>
-
-                 <!-- Card 3-->
-                 <div class="food_menu_card">
-                    <img src="./assets/iceCream.jpg" alt="iceCream" class="food_menu_card_image"/>
-                    <div class="food_menu_card_details">
-                        <h4 class="food_menu_card_title"><strong>Ice Creams</strong></h4>
-                        <p>Baskin Robins, Ibaco
-                            <span style="color:red;">+3</span></p>
-                    </div>
-                </div>
-
-            </div>
-                
-
-        </section>
-        <section class="restaurant_list_container">
-            <div class="restaurant_list_text">
-                <h4 class="text-x1">Order From 100s of restaurants</h4>
-            </div>
-            <div class="restaurant_list_images_container">
-                <div class="restaurant_list_row_1">
-                    <img src="assets/restaurant1.jpg" alt="restaurant1" class="restaurant1">
-                    <img src="assets/restaurant2.jpg" alt="restaurant2" class="restaurant2">
-
-                </div>
-                <div class="restaurant_list_row_2">
-                    <img src="assets/restaurant3.jpg" alt="restaurant3" class="restaurant3">
-                    <img src="assets/restaurant4.jpg" alt="restaurant4" class="restaurant4">
-                   
-                </div> 
             </div>
         </section>
-     </main>
+        <section class="Email_container">
+            <h1 class="Email_text_container">Stay Updated</h1>
+            <div class="Email_search_container">
+            <div class="Email_searchbox">
+                <input type="email" placeholder="Enter your E-mail" class="Email_text">
+            </div>
+            <button class="Email_button">Get Updates</button>
+            </div>
+        </section>
+        <section class="quote_container">
+            <div class="over_quote_image"></div>
+            <h3 class="quote_image_text">"When a man's stomach is full it makes no difference whether he is rich or poor."</h3>
+        </section>
+        <footer class="footer">
+            <img src="assets/logo.png" alt="footer_logo" class="footer_logo">
+            <ul>
+                <li>Pricing</li>
+                <li>Terms and conditions</li>
+                <li>Partnership</li>
+                <li>Career</li>
+                <li>Contact</li>
+            </ul>
+            <div class="icons">
+               <a href="https://www.facebook.com/nirmal.chathura.7"> <i class="fab fa-facebook-f"></i></a>
+               <a href="https://twitter.com/NirmalChathura"><i class="fab fa-twitter"></i></a> 
+               <a href="https://www.instagram.com/nirmal_cu/"> <i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/nirmal-chathura/"><i class="fab fa-linkedin-in"></i></a>
+    
+            </div>
+        </footer>
+        <div class="copyrights">
+            <p><i class="far fa-copyright"></i>Nirmal_C|gmail:chathuraun@gmail.com</p>
+        </div>
+    </main>
 </body>
 </html>
